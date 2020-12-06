@@ -11,3 +11,7 @@
 * [Haskell for mac](http://learn.hfm.io/first_steps.html)
 * [Happylearnhaskell](http://www.happylearnhaskelltutorial.com/contents.html)
 * [Haskell Studay Plan](https://github.com/soupi/haskell-study-plan/)
+
+## Reference Documentaions
+
+* [Hackage](https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html)
