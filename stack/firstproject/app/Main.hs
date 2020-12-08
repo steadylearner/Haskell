@@ -18,6 +18,9 @@ import Data.Text hiding (map)
 
 import EmojiQuotes
 
+-- -- attempting to use a hidden module
+-- import QuotesStore
+
 main = do
      putStrLn ("Type in a number between 0 and " ++ show (numberOfQuotes - 1))
      

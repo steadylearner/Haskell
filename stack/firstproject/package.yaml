@@ -29,6 +29,7 @@ dependencies:
 library:
   source-dirs: src
   exposed-modules: EmojiQuotes
+  other-modules: QuotesStore # Not public
 
 executables:
   firstproject-exe:

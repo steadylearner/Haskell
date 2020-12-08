@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 58684e89b673922419146708983760b3f3d0a0168e5df1c6dcbf8639af9c40f9
+-- hash: 0d8736289afac8fb973e625be20e4646ad3e6832ffb3588c5c2fa0ab0b9692b3
 
 name:           firstproject
 version:        0.1.0.0
@@ -29,8 +29,7 @@ library
   exposed-modules:
       EmojiQuotes
   other-modules:
-      Lib
-      Paths_firstproject
+      QuotesStore
   hs-source-dirs:
       src
   build-depends:
