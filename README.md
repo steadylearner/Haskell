@@ -1,6 +1,6 @@
 <!-- * [Haskell Programming from First Principles.pdf](https://github.com/dylannichols/Haskell-Book/blob/master/Chris%20Allen%20%26%20Julie%20Moronuki%20-%20Haskell%20Programming%20from%20First%20Principles.pdf) -->
 
-# Read and code the examples 
+# Read
 
 * [Real World Haskell](http://book.realworldhaskell.org/read/getting-started.html)
 * [School of Haskell](https://www.schoolofhaskell.com/school/starting-with-haskell/)
@@ -14,4 +14,5 @@
 
 ## Reference Documentaions
 
+* [How to use Stack](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
 * [Hackage](https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html)
