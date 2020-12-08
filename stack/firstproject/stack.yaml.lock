@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: haskell-say-1.0.0.0@sha256:654ed7ff571d62fb03dfda576aa0a89410fe403b0d84695b5151e3d026f33099,1330
+    pantry-tree:
+      size: 362
+      sha256: 9082066dbdb98dfc3c988c2ad96ee05a6469e94644985f29b305f50a30b7da3c
+  original:
+    hackage: haskell-say-1.0.0.0
 snapshots:
 - completed:
     size: 533252

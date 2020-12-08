@@ -21,12 +21,14 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-# - emojis
-# - haskell-say
-# - text
+- emojis
+- text
+- haskell-say # Use stack.yaml (extra-deps:) part.
 
+# The exposed-modules: EmojiQuotes indicates that EmojiQuotes is a library module and should be exposed for usage in other modules.
 library:
   source-dirs: src
+  exposed-modules: EmojiQuotes
 
 executables:
   firstproject-exe:
