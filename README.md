@@ -2,6 +2,8 @@
 
 # Read
 
+Collect working code.
+
 * [Real World Haskell](http://book.realworldhaskell.org/read/getting-started.html)
 * [School of Haskell](https://www.schoolofhaskell.com/school/starting-with-haskell/)
 * [Hashkell](https://en.m.wikibooks.org/wiki/Haskell/Simple_input_and_output)
@@ -14,5 +16,14 @@
 
 ## Reference Documentaions
 
-* [How to use Stack](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
 * [Hackage](https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html)
+
+## Stack
+
+* [How to use it](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
+
+## Web
+
+This is not perfect yet.
+
+* [Follow ihp tutorial to build a web project.](https://ihp.digitallyinduced.com/)
