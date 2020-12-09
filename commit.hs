@@ -1,4 +1,8 @@
 #!/usr/bin/env stack
+{- stack
+  script
+  --resolver lts-16.24
+-}
 
 -- Compare it with commit.py
 
