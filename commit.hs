@@ -1,6 +1,8 @@
 -- Compare it with commit.py
 -- $chmod +x commit.hs
 
+{-# OPTIONS_GHC -Wall #-}
+
 import System.Process
 import Data.List
 
