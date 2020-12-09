@@ -44,6 +44,4 @@ main = do
         else 
             callCommand $ commit ++ defaultMessage
 
-    callCommand "git push -u origin main -f"
-
 
