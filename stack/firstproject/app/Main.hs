@@ -21,6 +21,15 @@ import EmojiQuotes
 -- -- attempting to use a hidden module
 -- import QuotesStore
 
+-- Copied executables to /Users/steadylearner/.local/bin:
+-- - hlint
+
+-- Warning: Installation path /Users/steadylearner/.local/bin
+--          not found on the PATH environment variable.
+
+-- Solve this warning.
+-- (Set code/preferences/settings/haskell/hlint/executablepath to /Users/steadylearner/.local/bin/hlint)
+
 main = do
      putStrLn ("Type in a number between 0 and " ++ show (numberOfQuotes - 1))
      
