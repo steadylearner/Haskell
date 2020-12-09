@@ -1,12 +1,14 @@
 #!/usr/bin/env stack
-{- stack
--}
 
 -- Compare it with commit.py
 
 -- To use this file directly
 -- $chmod +x commit.hs
 -- Then, $./commit.hs
+
+-- Refer to these
+--  https://www.fpcomplete.com/haskell/tutorial/stack-script/
+-- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
 
 {-# OPTIONS_GHC -Wall #-}
 
