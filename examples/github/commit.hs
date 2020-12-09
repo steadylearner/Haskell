@@ -11,7 +11,7 @@ main = do
     callCommand start
 
     let commit = "git commit -m"
-    let deafultMessage = " Edit README.md"
+    let defaultMessage = " 'Edit README.md'"
 
     response <- promptLine "Do you want to use the default message for this commit?([y]/n)\n"
 
@@ -21,6 +21,6 @@ main = do
                 response <- promptLine "What do you want then?\n"
                 callCommand $ commit ++ response
         else 
-            callCommand response
+            callCommand $ commit ++ defaultMessage
 
 
