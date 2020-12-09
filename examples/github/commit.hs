@@ -19,7 +19,10 @@ main = do
         then 
             do
                 response <- promptLine "What do you want then?\n"
-                callCommand $ commit ++ response
+                if response == ""
+                    then callCommand $ commit ++ defaultMessage
+                    else callCommand $ commit ++ response
+                -- callCommand $ commit ++ response
         else 
             callCommand $ commit ++ defaultMessage
 
