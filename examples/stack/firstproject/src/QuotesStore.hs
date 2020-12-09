@@ -30,4 +30,4 @@ quotes =
    <> (pure " the ")
    <> (emojiFromAlias "round_pushpin")
    <> (pure " over the ")
-   <> (emojiFromAlias "face_with_head_bandage")]
+   <> (pure " over the ") <> emojiFromAlias "face_with_head_bandage"]

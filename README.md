@@ -2,9 +2,11 @@
 
 <!-- https://github.com/mongodb-haskell/mongodb/blob/master/test/Main.hs -->
 
-# Read
+# Haskell 
 
-Collect working code for examples folder.
+You can start with one of the learning source below. Type and compile some files and projects at [examples/](https://github.com/steadylearner/Haskell/tree/main/examples)
+
+This will be similar to the [Rust Full Stack repository](https://github.com/steadylearner/Rust-Full-Stack) for Rust. We don't learn just by reading. Build a real project useful to you.
 
 * [Real World Haskell](http://book.realworldhaskell.org/read/getting-started.html)
 * [School of Haskell](https://www.schoolofhaskell.com/school/starting-with-haskell/)
@@ -25,18 +27,23 @@ Collect working code for examples folder.
 * [How to use it](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
 * [Stackage](https://www.stackage.org/)
 
+Install hlint and other vs plugin to help you write the better Haskell code from the beginning.
+
 ```console
 $stack install hlint
-// Then, install haskell-linter vsc plugin
+// Then, install haskell-linter and error lens vsc plugin.
 ```
 
 ## Web
 
-This is not perfect yet.
+I should include more examples.
 
 * [Follow ihp tutorial to build a web project.](https://ihp.digitallyinduced.com/)
 
 ## Blog posts
 
+You can also read other blog posts from the authors of those links.
+
 * [Haskell mini patterns](https://kowainik.github.io/posts/haskell-mini-patterns)
-* [production](https://www.stephendiehl.com/posts/production.html)
+* [Production](https://www.stephendiehl.com/posts/production.html)
+* [Haskell bad parts](https://www.snoyman.com/blog/2020/10/haskell-bad-parts-1)

@@ -10,4 +10,4 @@ main = do
     
     let someone = Person "Somone" 10
     let ageOnly = age someone
-    print $ ageOnly
+    print ageOnly
