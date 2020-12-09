@@ -1,5 +1,12 @@
+#!/usr/bin/env stack
+
 -- Compare it with commit.py
+
+-- To use this file directly
 -- $chmod +x commit.hs
+-- Then, $./commit.hs
+
+{-# OPTIONS_GHC -Wall #-}
 
 import System.Process
 import Data.List
@@ -9,6 +16,7 @@ promptLine prompt = do
     putStr prompt
     getLine
 
+main :: IO ()
 main = do
     let start = "git add ." 
     callCommand start
@@ -21,10 +29,10 @@ main = do
     if "n" `isPrefixOf` response
         then 
             do
-                response <- promptLine "What do you want then?\n"
-                if response == ""
+                message <- promptLine "What do you want then?\n"
+                if message == ""
                     then callCommand $ commit ++ defaultMessage
-                    else callCommand $ commit ++ response
+                    else callCommand $ commit ++ message
         else 
             callCommand $ commit ++ defaultMessage
 
