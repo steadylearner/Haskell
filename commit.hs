@@ -40,7 +40,7 @@ main = do
                 message <- promptLine "What do you want then?\n"
                 if message == ""
                     then callCommand $ commit ++ defaultMessage
-                    else callCommand $ commit ++ message
+                    else callCommand $ commit ++ " '" ++ message ++ "'"
         else 
             callCommand $ commit ++ defaultMessage
 
