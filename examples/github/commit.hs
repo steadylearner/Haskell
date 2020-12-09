@@ -1,4 +1,8 @@
 #!/usr/bin/env stack
+{- stack
+  script
+-}
+
 
 -- Compare it with commit.py
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env stack
+{- stack
+-}
 
 -- Compare it with commit.py
 
