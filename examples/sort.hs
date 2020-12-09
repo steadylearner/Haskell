@@ -8,6 +8,6 @@ main = do
     let s = ints == sort ints
     putStrLn $ "Sorted: " ++ show s
 
-    if (ints == sort ints)
-        then putStrLn $ show "Sorted"
-        else putStrLn $ show "Not Sorted"
+    if ints == sort ints
+        then print "Sorted"
+        else print "Not Sorted"

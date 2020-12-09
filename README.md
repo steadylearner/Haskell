@@ -6,11 +6,11 @@
 
 You can start with one of the learning source below. Type and compile some files and projects at [examples/](https://github.com/steadylearner/Haskell/tree/main/examples)
 
-This will be similar to the [Rust Full Stack repository](https://github.com/steadylearner/Rust-Full-Stack) for Rust. We don't learn just by reading. Build a real project useful to you.
+This will be similar to the [Rust Full Stack repository](https://github.com/steadylearner/Rust-Full-Stack) for Rust. 
 
 * [Real World Haskell](http://book.realworldhaskell.org/read/getting-started.html)
 * [School of Haskell](https://www.schoolofhaskell.com/school/starting-with-haskell/)
-* [Hashkell](https://en.m.wikibooks.org/wiki/Haskell/Simple_input_and_output)
+* [Haskell Wiki](https://en.m.wikibooks.org/wiki/Haskell/Simple_input_and_output)
 * [Simple examples](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples#binary-serialization)
 * [Getting started with HasKell](https://stackoverflow.com/questions/1012573/getting-started-with-haskell)
 * [Learn you a Haskell](http://learnyouahaskell.com/chapters)
@@ -24,8 +24,8 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## Stack
 
+* [Stackage](https://www.stackage.org/), [What is stackage?](https://www.snoyman.com/blog/2020/08/stackage-for-rust)
 * [How to use it](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
-* [Stackage](https://www.stackage.org/)
 
 Install hlint and other vs plugin to help you write the better Haskell code from the beginning.
 

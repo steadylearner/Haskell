@@ -1,12 +1,12 @@
+import Control.Monad (when)
+
 main :: IO ()
 main = do
-    if 7 `mod`2 == 0
+    if even 7
         then putStrLn "7 is even."
         else putStrLn "7 is odd."
 
-    if 8 `mod` 4 == 0
-        then putStrLn "8 is divisible by 4."
-        else return ()
+    when (8 `mod` 4 == 0) (putStrLn "8 is divisible by 4.")
 
     let num = 9
     putStrLn $
