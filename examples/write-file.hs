@@ -10,7 +10,7 @@ main = do
 
   bracket
     (openBinaryFile "test.txt" WriteMode)
-    (\handle -> hClose handle)
+    (hClose)
     $ \handle -> do
       let d2 = [115, 111, 109, 101, 10] :: [Int8]
       p <- newArray d2

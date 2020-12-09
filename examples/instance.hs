@@ -3,7 +3,7 @@ class Geometry g where
     perim:: g -> Double
 
 data Square = Square Double Double deriving Show
-data Circle = Circle Double deriving Show
+newtype Circle = Circle Double deriving Show -- It has only a filed so use newtype.
 
 instance Geometry Square where
     area (Square w h) = w * h
