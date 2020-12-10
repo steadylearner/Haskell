@@ -12,6 +12,7 @@
 -- To use this file directly
 -- $chmod +x commit.hs
 -- Then, $./commit.hs
+-- ($stack runghc -- HelloWorld.hs)
 
 -- 2. Binary
 -- $stack ghc -- commit.hs

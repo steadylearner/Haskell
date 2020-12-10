@@ -32,6 +32,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [Stackage](https://www.stackage.org/), [What is stackage?](https://www.snoyman.com/blog/2020/08/stackage-for-rust)
 * [How to use it](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
 * [Stack script](https://www.fpcomplete.com/haskell/tutorial/stack-script/)
+* [Stack build](https://www.fpcomplete.com/haskell/tutorial/stack-build/)
 
 Install hlint and other vsc plugin to help you write the better Haskell code from the beginning.
 
