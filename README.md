@@ -28,7 +28,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [How to use it](https://schooloffp.co/2020/12/05/whirlwind-tour-of-stack-for-beginners.html)
 * [Stack script](https://www.fpcomplete.com/haskell/tutorial/stack-script/)
 
-Install hlint and other vs plugin to help you write the better Haskell code from the beginning.
+Install hlint and other vsc plugin to help you write the better Haskell code from the beginning.
 
 ```console
 $stack install hlint

@@ -10,14 +10,15 @@
 -- $chmod +x commit.hs
 -- Then, $./commit.hs
 
--- Refer to these
---  https://www.fpcomplete.com/haskell/tutorial/stack-script/
+-- Refer to them
+-- https://www.fpcomplete.com/haskell/tutorial/stack-script/
 -- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
 
 {-# OPTIONS_GHC -Wall #-}
 
 import System.Process
 import Data.List
+import Control.Monad.Cont
 
 promptLine :: String -> IO String
 promptLine prompt = do
@@ -37,11 +38,21 @@ main = do
     if "n" `isPrefixOf` response
         then 
             do
-                message <- promptLine "What do you want then?\n"
-                if message == ""
-                    then callCommand $ commit ++ defaultMessage
-                    else callCommand $ commit ++ message
+                withBreak $ \break ->
+                    forM_ [1..] $ \_ -> do
+                        message <- promptLine "What do you want then?\n"
+                        if message == ""
+                            then p "Your message is empty."
+                            else
+                                callCommand $ commit ++ " '" ++ message ++ "'"
+                                break () 
         else 
             callCommand $ commit ++ defaultMessage
+
+    callCommand "git push -u origin main -f"
+
+    where
+    withBreak = (`runContT` return) . callCC
+    p = liftIO . putStrLn
 
 

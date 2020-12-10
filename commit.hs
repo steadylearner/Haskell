@@ -10,9 +10,10 @@
 -- $chmod +x commit.hs
 -- Then, $./commit.hs
 
--- Refer to these
---  https://www.fpcomplete.com/haskell/tutorial/stack-script/
+-- Refer to them
+-- https://www.fpcomplete.com/haskell/tutorial/stack-script/
 -- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
+-- https://www.steadylearner.com/blog/read/How-to-automatically-commit-files-to-GitHub-with-Python
 
 {-# OPTIONS_GHC -Wall #-}
 
@@ -39,6 +40,8 @@ main = do
             do
                 message <- promptLine "What do you want then?\n"
                 if message == ""
+                    -- Improve this with recursion
+                    -- https://stackoverflow.com/questions/16004365/simple-haskell-loop
                     then callCommand $ commit ++ defaultMessage
                     else callCommand $ commit ++ " '" ++ message ++ "'"
         else 
