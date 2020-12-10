@@ -1,3 +1,5 @@
+-- https://www.fpcomplete.com/haskell/tutorial/stack-script/
+
 #!/usr/bin/env stack
 {- stack
   script
