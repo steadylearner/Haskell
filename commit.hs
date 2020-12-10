@@ -19,6 +19,7 @@
 
 import System.Process
 import Data.List
+import System.Exit
 
 promptLine :: String -> IO String
 promptLine prompt = do
@@ -33,17 +34,21 @@ main = do
     let commit = "git commit -m"
     let defaultMessage = " 'Edit README.md'"
 
-    response <- promptLine "Do you want to use the default message for this commit?([y]/n)\n"
+    useDefaultMessage <- promptLine "Do you want to use the default message for this commit?([y]/n)\n"
 
-    if "n" `isPrefixOf` response
+    if "n" `isPrefixOf` useDefaultMessage
         then 
             do
-                message <- promptLine "What do you want then?\n"
-                if message == ""
-                    -- Improve this with recursion
+                commitMessage <- promptLine "What do you want then?\n"
+                if commitMessage == ""
+                    -- Improve this with recursion?
                     -- https://stackoverflow.com/questions/16004365/simple-haskell-loop
-                    then callCommand $ commit ++ defaultMessage
-                    else callCommand $ commit ++ " '" ++ message ++ "'"
+                    then do
+                        secondCommitMessage <- promptLine "Your message was empty. What do you want?\n"
+                        if secondCommitMessage == ""
+                            then die (show "Your message was empty again. Close the programm.")
+                            else callCommand $ commit ++ " '" ++ secondCommitMessage ++ "'"
+                    else callCommand $ commit ++ " '" ++ commitMessage ++ "'"
         else 
             callCommand $ commit ++ defaultMessage
 

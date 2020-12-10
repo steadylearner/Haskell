@@ -13,12 +13,13 @@
 -- Refer to them
 -- https://www.fpcomplete.com/haskell/tutorial/stack-script/
 -- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
+-- https://www.steadylearner.com/blog/read/How-to-automatically-commit-files-to-GitHub-with-Python
 
 {-# OPTIONS_GHC -Wall #-}
 
 import System.Process
 import Data.List
-import Control.Monad.Cont
+import System.Exit
 
 promptLine :: String -> IO String
 promptLine prompt = do
@@ -33,26 +34,24 @@ main = do
     let commit = "git commit -m"
     let defaultMessage = " 'Edit README.md'"
 
-    response <- promptLine "Do you want to use the default message for this commit?([y]/n)\n"
+    useDefaultMessage <- promptLine "Do you want to use the default message for this commit?([y]/n)\n"
 
-    if "n" `isPrefixOf` response
+    if "n" `isPrefixOf` useDefaultMessage
         then 
             do
-                withBreak $ \break ->
-                    forM_ [1..] $ \_ -> do
-                        message <- promptLine "What do you want then?\n"
-                        if message == ""
-                            then p "Your message is empty."
-                            else
-                                callCommand $ commit ++ " '" ++ message ++ "'"
-                                break () 
+                commitMessage <- promptLine "What do you want then?\n"
+                if commitMessage == ""
+                    -- Improve this with recursion?
+                    -- https://stackoverflow.com/questions/16004365/simple-haskell-loop
+                    then do
+                        secondCommitMessage <- promptLine "Your message was empty. What do you want?\n"
+                        if secondCommitMessage == ""
+                            then die (show "Your message was empty again. Close the programm.")
+                            else callCommand $ commit ++ " '" ++ secondCommitMessage ++ "'"
+                    else callCommand $ commit ++ " '" ++ commitMessage ++ "'"
         else 
             callCommand $ commit ++ defaultMessage
 
     callCommand "git push -u origin main -f"
-
-    where
-    withBreak = (`runContT` return) . callCC
-    p = liftIO . putStrLn
 
 
