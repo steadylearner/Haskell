@@ -1,0 +1,2 @@
+# The language of the repo should be Rust
+    *.py linguist-language=Haskell
