@@ -6,14 +6,21 @@
 
 -- Compare it with commit.py
 
+-- You can use it with two ways.
+
+-- 1. Script
 -- To use this file directly
 -- $chmod +x commit.hs
 -- Then, $./commit.hs
+
+-- 2. Binary
+-- $stack ghc -- commit.hs
 
 -- Refer to them
 -- https://www.fpcomplete.com/haskell/tutorial/stack-script/
 -- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
 -- https://www.steadylearner.com/blog/read/How-to-automatically-commit-files-to-GitHub-with-Python
+-- https://wiki.haskell.org/Introduction_to_Haskell_IO/Actions#:~:text=Actions%20are%20values%20in%20the,every%20action%20has%20a%20type.
 
 {-# OPTIONS_GHC -Wall #-}
 
