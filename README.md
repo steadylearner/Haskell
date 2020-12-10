@@ -18,6 +18,11 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [Happylearnhaskell](http://www.happylearnhaskelltutorial.com/contents.html)
 * [Haskell Studay Plan](https://github.com/soupi/haskell-study-plan/)
 
+## TODO
+
+* Make a simple database involved programm with Stack.
+* Learn PureScript.
+
 ## Reference
 
 * [Hackage Prelude](https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html)

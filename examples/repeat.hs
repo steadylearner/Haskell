@@ -9,3 +9,5 @@ repeatIt n action =
   repeatIt (n-1) action
 
 main = repeatIt 10 (putStrLn "It will be repeated 10 times.")
+
+-- putStr $ concat ["fuck" ++ "\n" | i <- [1, 2..10]]

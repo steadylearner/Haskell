@@ -19,7 +19,7 @@
 
 import System.Process
 import Data.List
-import System.Exit
+import System.Exit -- https://stackoverflow.com/questions/44604701/haskell-exit-a-program-with-a-specified-error-code
 
 promptLine :: String -> IO String
 promptLine prompt = do

@@ -14,12 +14,13 @@
 -- https://www.fpcomplete.com/haskell/tutorial/stack-script/
 -- http://hackage.haskell.org/package/process-1.6.10.0/docs/System-Process.html
 -- https://www.steadylearner.com/blog/read/How-to-automatically-commit-files-to-GitHub-with-Python
+-- https://wiki.haskell.org/Introduction_to_Haskell_IO/Actions#:~:text=Actions%20are%20values%20in%20the,every%20action%20has%20a%20type.
 
 {-# OPTIONS_GHC -Wall #-}
 
 import System.Process
 import Data.List
-import System.Exit
+import System.Exit -- https://stackoverflow.com/questions/44604701/haskell-exit-a-program-with-a-specified-error-code
 
 promptLine :: String -> IO String
 promptLine prompt = do
