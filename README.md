@@ -20,6 +20,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
+* Include update and show only one todo feature to todo example.
 * Make a simple database involved programm with Stack. (CRUD, CLI)
 
 ## Reference
