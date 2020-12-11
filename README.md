@@ -20,7 +20,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
-* Make a simple database involved programm with Stack. (CRUD)
+* Make a simple database involved programm with Stack. (CRUD, CLI)
 
 ## Reference
 

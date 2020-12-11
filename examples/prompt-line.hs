@@ -1,7 +1,7 @@
 promptLine :: String -> IO String
 promptLine prompt = do
-    putStr prompt -- IO
-    getLine -- String
+    putStr prompt
+    getLine
 
 main :: IO ()
 main = do
