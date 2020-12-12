@@ -52,7 +52,7 @@ main = do
                     -- Improve this with recursion?
                     -- https://stackoverflow.com/questions/16004365/simple-haskell-loop
                     then do
-                        secondCommitMessage <- promptLine "Your message was empty. What do you want?\n"
+                        secondCommitMessage <- promptLine "Your message was empty. What do you really want?\n"
                         if secondCommitMessage == ""
                             then die (show "Your message was empty again. Close the programm.")
                             else callCommand $ commit ++ " '" ++ secondCommitMessage ++ "'"

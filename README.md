@@ -22,6 +22,11 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 * Make a simple database involved programm with Stack. (CRUD, CLI)
 
+## Reusable ones
+
+* [Commit to GitHub with Haskell with $./commit](https://github.com/steadylearner/Haskell/blob/main/examples/github/commit.hs)
+* [Todo app with Stack](https://github.com/steadylearner/Haskell/tree/main/examples/stack/todo)
+
 ## Reference
 
 * [Hackage Prelude](https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html)

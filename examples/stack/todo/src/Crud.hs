@@ -57,6 +57,8 @@ interpret  command       todos = do
     putStrLn ("Invalid command: `" ++ command ++ "`")
     prompt todos
 
+-- Move the functions below to another file.
+
 deleteOne :: Int -> [a] -> Maybe [a]
 deleteOne 0 (_:as) = Just as
 deleteOne n (a:as) = do
