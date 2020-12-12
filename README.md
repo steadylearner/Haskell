@@ -23,6 +23,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * Play with the database.
 * Find how to send a web reqeust.
 * Make a simple CLI programm with them.
+* [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
 ## Reusable ones
 
