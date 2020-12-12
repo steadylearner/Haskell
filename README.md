@@ -20,7 +20,9 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
-* Make a simple database involved programm with Stack. (CRUD, CLI)
+* Play with the database.
+* Find how to send a web reqeust.
+* Make a simple CLI programm with them.
 
 ## Reusable ones
 

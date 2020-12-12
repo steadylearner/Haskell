@@ -11,6 +11,6 @@ main = do
     putStrLn "e <Int>    - Edit te numbered entry"
     putStrLn "l          - List todo"
     putStrLn "q          - Quit"
-    prompt []
+    prompt [] -- Start with the empty todo list.
 
 
