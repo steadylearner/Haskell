@@ -1,5 +1,7 @@
 module Crud
-    ( prompt
+    ( 
+        prompt,
+        editIndex,
     ) where
 
 import Data.List
