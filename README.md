@@ -1,3 +1,4 @@
+
 <!-- * [Haskell Programming from First Principles.pdf](https://github.com/dylannichols/Haskell-Book/blob/master/Chris%20Allen%20%26%20Julie%20Moronuki%20-%20Haskell%20Programming%20from%20First%20Principles.pdf) -->
 
 <!-- https://github.com/mongodb-haskell/mongodb/blob/master/test/Main.hs -->
@@ -20,9 +21,8 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
-* Play with the database.
-* Find how to send a web reqeust.
-* Make a simple CLI programm with them.
+* [Make a simple CLI with optparse-applicative.](https://hackage.haskell.org/package/optparse-applicative)
+* Include Cli with mongodb for production.
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
 ## Reusable ones

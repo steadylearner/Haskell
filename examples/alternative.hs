@@ -1,0 +1,3 @@
+-- <|>
+-- Exclusive?
+-- https://en.wikibooks.org/wiki/Haskell/Alternative_and_MonadPlus
