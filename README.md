@@ -22,7 +22,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 ## TODO
 
 * [Make a simple CLI with optparse-applicative.](https://hackage.haskell.org/package/optparse-applicative)
-* Include Cli with mongodb for production.
+* Include Cli with mongodb to production folder.
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
 ## Reusable ones
@@ -61,3 +61,4 @@ You can also read other blog posts from the authors of those links.
 * [Haskell mini patterns](https://kowainik.github.io/posts/haskell-mini-patterns)
 * [Production](https://www.stephendiehl.com/posts/production.html)
 * [Haskell bad parts](https://www.snoyman.com/blog/2020/10/haskell-bad-parts-1)
+* [patter matching](https://www.fpcomplete.com/blog/pattern-matching/)
