@@ -12,5 +12,5 @@ main = do
     let justTwo = testMaybe 1 1
     case justTwo of
         Just n -> print n
-        Nothing -> print "shit"
+        Nothing -> print "Nothing"
 

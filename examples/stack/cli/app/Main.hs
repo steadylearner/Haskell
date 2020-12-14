@@ -17,6 +17,9 @@ data Command
     = Create String
     | Delete
 
+-- I already have Rust version for the conditions below.
+-- If I have sufficient time, I will implement this and write a blog for this.
+
 -- -- 1. Make handlers for them.
 -- -- get
 -- -- post
