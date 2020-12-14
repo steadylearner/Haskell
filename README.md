@@ -21,14 +21,16 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
-* [Make a simple CLI with optparse-applicative.](https://hackage.haskell.org/package/optparse-applicative)
-* Include Cli with mongodb to production folder.
+* Test web requests at examples/stack folder.
+* Include CLI with mongodb to prod folder or private repositroy. (WIP, should organize this.)
+* [Make a simple demonstration CLI with optparse-applicative at examples/stack?](https://hackage.haskell.org/package/optparse-applicative)
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
-## Reusable ones
+## Reusable
 
 * [Commit to GitHub with Haskell with $./commit](https://github.com/steadylearner/Haskell/blob/main/examples/github/commit.hs)
 * [Todo app with Stack](https://github.com/steadylearner/Haskell/tree/main/examples/stack/todo)
+* [Mongodb example](https://github.com/steadylearner/Haskell/tree/main/examples/stack/mongodbtest)
 
 ## Reference
 

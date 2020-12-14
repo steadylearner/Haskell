@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7eac05a3e6f0e060717598c501d57da57991ac6133d942de38284bb1d9b0ef02
+-- hash: 52c2a5f1bab2894c4396d0d349aacfe98ed6a8dfb8482a2d0677d2e9448b45c3
 
 name:           mongodbtest
 version:        0.1.0.0
@@ -34,8 +34,10 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , bson
     , mongoDB
     , mtl
+    , open-browser
   default-language: Haskell2010
 
 executable mongodbtest-exe
@@ -47,9 +49,11 @@ executable mongodbtest-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bson
     , mongoDB
     , mongodbtest
     , mtl
+    , open-browser
   default-language: Haskell2010
 
 test-suite mongodbtest-test
@@ -62,7 +66,9 @@ test-suite mongodbtest-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bson
     , mongoDB
     , mongodbtest
     , mtl
+    , open-browser
   default-language: Haskell2010
