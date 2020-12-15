@@ -27,9 +27,8 @@ main = do
 
 -- TODO
 
--- 1. Complete updateOrder and separate api.
+-- 1. Separate api.
 -- 2. Organize the file and include code for CLI.
--- 3. Use the stage mongodb uri and redirect to the website after update.
 
 run :: Action IO ()
 run = do
@@ -89,9 +88,6 @@ findOrderByEmail email = findOne (select ["email" =: email] "orders")
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#projecting
 projectOrderByEmail :: String -> Action IO (Maybe Document)
 projectOrderByEmail email = findOne (select ["email" =: email] "orders") {project = ["email" =: 1, "_id" =: 0]}
-
--- Before I use this, I need to find how to select one order from it.
--- copyOrder:t
 
 -- This works.
 printDocs :: String -> [Document] -> Action IO ()

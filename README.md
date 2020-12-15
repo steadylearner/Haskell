@@ -1,4 +1,3 @@
-
 <!-- * [Haskell Programming from First Principles.pdf](https://github.com/dylannichols/Haskell-Book/blob/master/Chris%20Allen%20%26%20Julie%20Moronuki%20-%20Haskell%20Programming%20from%20First%20Principles.pdf) -->
 
 <!-- https://github.com/mongodb-haskell/mongodb/blob/master/test/Main.hs -->
@@ -18,12 +17,12 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [Haskell for mac](http://learn.hfm.io/first_steps.html)
 * [Happylearnhaskell](http://www.happylearnhaskelltutorial.com/contents.html)
 * [Haskell Studay Plan](https://github.com/soupi/haskell-study-plan/)
+* [Learn PureScript to help you learn Haskell](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md).
 
 ## TODO
 
 * Test web requests at examples/stack folder.
 * Include CLI with mongodb to prod folder or private repositroy. (WIP, should organize this.)
-* [Learn PureScript to help learn Haskell.](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md). https://book.purescript.org/chapter1.html
 * [Make a simple demonstration CLI with optparse-applicative at examples/stack?](https://hackage.haskell.org/package/optparse-applicative)
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
