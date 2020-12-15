@@ -104,7 +104,6 @@ printDoc Nothing = liftIO $ print "Nothing"
 -- Use it with project.
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#projecting
 copyDoc :: Maybe Document -> Action IO Value
-copyDoc (Just order) = do
-    insert "orders" (order <> ["notimportant" =: ""])
+copyDoc (Just order) = insert "orders" (order <> ["notimportant" =: ""])
 copyDoc Nothing = insert "orders" [] -- Shouldn't do Nothing, learn more and edit it.
 

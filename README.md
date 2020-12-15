@@ -23,6 +23,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 * Test web requests at examples/stack folder.
 * Include CLI with mongodb to prod folder or private repositroy. (WIP, should organize this.)
+* [Learn PureScript to help learn Haskell.](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md). https://book.purescript.org/chapter1.html
 * [Make a simple demonstration CLI with optparse-applicative at examples/stack?](https://hackage.haskell.org/package/optparse-applicative)
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
