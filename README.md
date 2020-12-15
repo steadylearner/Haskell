@@ -21,9 +21,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 
 ## TODO
 
-* Test web requests at examples/stack folder.
 * Include CLI with mongodb to prod folder or private repositroy. (WIP, should organize this.)
-* [Make a simple demonstration CLI with optparse-applicative at examples/stack?](https://hackage.haskell.org/package/optparse-applicative)
 * [Follow this](https://lettier.github.io/posts/2017-08-30-haskell-gtk-video-player.html) for [movie-monad](https://github.com/lettier/movie-monad) 
 
 ## Reusable
