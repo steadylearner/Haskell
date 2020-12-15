@@ -98,7 +98,7 @@ printDoc (Just order) = liftIO $ print order
 printDoc Nothing = liftIO $ print "Nothing"
 
 -- What I really want to make is this.
--- Use it with project.
+-- Use it with the real project.
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#projecting
 cloneOrder :: Maybe Document -> Action IO Value
 cloneOrder (Just order) = insert "orders" (order <> ["notimportant" =: ""])

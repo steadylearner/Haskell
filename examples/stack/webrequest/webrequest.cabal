@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 043e7853a8b73c845b2f14a613e5d297c0c445e89daa1dca483e66e09d3dc3d7
+-- hash: 0d9dd46d28d119e50c3749a3db9f27f1030e809adc9b94cb37d8e30e7bc3bb83
 
 name:           webrequest
 version:        0.1.0.0
@@ -33,7 +33,9 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , req
   default-language: Haskell2010
 
 executable webrequest-exe
@@ -44,7 +46,9 @@ executable webrequest-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , req
     , webrequest
   default-language: Haskell2010
 
@@ -57,6 +61,8 @@ test-suite webrequest-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , req
     , webrequest
   default-language: Haskell2010
