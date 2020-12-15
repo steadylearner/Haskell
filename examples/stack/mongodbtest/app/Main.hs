@@ -5,6 +5,7 @@ module Main (main) where
 
 import Database.MongoDB    (Action, Document, Document, Value, access,
                             close, connect, delete, deleteMany, exclude, find, findOne,
+                            fetch, save, merge,
                             host, insert, insertMany, master, project, rest,
                             select, sort, (=:))
 
@@ -106,4 +107,11 @@ printDoc Nothing = liftIO $ print "Nothing"
 cloneOrder :: Maybe Document -> Action IO Value
 cloneOrder (Just order) = insert "orders" (order <> ["notimportant" =: ""])
 cloneOrder Nothing = insert "orders" [] -- Shouldn't do Nothing, learn more and edit it.
+
+-- updatOrder 
+-- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#updating
+-- updateOrderByEmail :: String -> [Field] -> Action IO (Maybe Document)
+updateOrderByEmail :: String -> [Field] -> Action IO ()
+updateOrderByEmail email document = fetch (select ["email" =: email] "orders") >>= save "orders" . merge document
+
 

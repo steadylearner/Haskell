@@ -14,7 +14,7 @@ prompt :: [String] -> IO ()
 prompt todos = do
     -- print todos -- List of todo input by a user.
     putStrLn ""
-    putStrLn "Test todo with Haskell. You can use +(create), -(delete), s(show), e(dit), l(ist), q(uit) commands."
+    putStrLn "Test todo with Haskell. You can use +(create), -(delete), s(show), e(dit), l(ist), c(lear), q(uit) commands."
     -- mapM_ putTodo (zip [0..] todos)
     command <- getLine
     if "e" `isPrefixOf` command
