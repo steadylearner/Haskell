@@ -52,6 +52,11 @@ interpret  "l"           todos = do
 
     mapM_ putTodo (zip [0..] todos)
     prompt todos
+
+interpret  "c"           todos = do
+    print "Clear todo list."
+
+    prompt []
             
 interpret  "q"           todos = return ()
 

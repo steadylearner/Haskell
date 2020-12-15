@@ -10,6 +10,7 @@ main = do
     putStrLn "s <Int>    - Show the numbered entry"
     putStrLn "e <Int>    - Edit te numbered entry"
     putStrLn "l          - List todo"
+    putStrLn "c          - Clear todo"
     putStrLn "q          - Quit"
     prompt [] -- Start with the empty todo list.
 

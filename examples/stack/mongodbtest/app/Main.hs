@@ -51,7 +51,7 @@ run = do
     findOrderByEmail "test" >>= printDoc
 
     -- Extract only field that I want.
-    projectOrderByEmail "test" >>= copyDoc
+    projectOrderByEmail "test" >>= cloneOrder
 
     listOrders >>= printDocs "List of orders"
 
@@ -103,7 +103,7 @@ printDoc Nothing = liftIO $ print "Nothing"
 -- What I really want to make is this.
 -- Use it with project.
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#projecting
-copyDoc :: Maybe Document -> Action IO Value
-copyDoc (Just order) = insert "orders" (order <> ["notimportant" =: ""])
-copyDoc Nothing = insert "orders" [] -- Shouldn't do Nothing, learn more and edit it.
+cloneOrder :: Maybe Document -> Action IO Value
+cloneOrder (Just order) = insert "orders" (order <> ["notimportant" =: ""])
+cloneOrder Nothing = insert "orders" [] -- Shouldn't do Nothing, learn more and edit it.
 
