@@ -2,3 +2,9 @@
 
 ihp/
 prod/
+
+# Ignore PureScript relevant files.
+output 
+.psc* 
+.purs* 
+.spago

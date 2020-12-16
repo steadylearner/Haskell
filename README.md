@@ -17,7 +17,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [Haskell for mac](http://learn.hfm.io/first_steps.html)
 * [Happylearnhaskell](http://www.happylearnhaskelltutorial.com/contents.html)
 * [Haskell Studay Plan](https://github.com/soupi/haskell-study-plan/)
-* [Learn PureScript to help you learn Haskell](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md).
+* [Learn PureScript to help you learn Haskell](https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md)
 
 ## TODO
 
