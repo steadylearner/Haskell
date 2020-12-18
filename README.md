@@ -44,8 +44,9 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 Install hlint and other vsc plugin to help you write the better Haskell code from the beginning.
 
 ```console
+$curl -sSL https://get.haskellstack.org/ | sh (This installs stack)
 $stack install hlint
-// Then, install haskell-linter and error lens vsc plugin.
+// Then, install haskell, haskell-linter, error lens vsc plugin etc.
 ```
 
 ## Web
