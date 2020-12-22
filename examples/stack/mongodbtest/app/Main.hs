@@ -103,7 +103,7 @@ printDoc Nothing = liftIO $ print "Nothing"
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#projecting
 cloneOrder :: Maybe Document -> Action IO Value
 cloneOrder (Just order) = insert "orders" (order <> ["notimportant" =: ""])
-cloneOrder Nothing = insert "orders" [] -- Shouldn't do Nothing, learn more and edit it.
+cloneOrder Nothing = error "No document to clone in the database."
 
 -- updatOrder 
 -- https://github.com/selectel/mongoDB-haskell/blob/master/doc/tutorial.md#updating

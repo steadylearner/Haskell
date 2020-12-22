@@ -37,7 +37,7 @@ main = do
         Create name -> putStrLn ("Created the thing named " ++ name)
         Delete -> putStrLn "Deleted the thing!"
     putStrLn ("global flag: " ++ show (optGlobalFlag opts))
-  where
+    where
     optsParser :: ParserInfo Opts
     optsParser =
         info
