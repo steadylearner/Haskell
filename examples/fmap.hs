@@ -7,4 +7,11 @@
 -- (<*>), which chains a multi-argument function through an Applicative 
 -- (=<<), which binds a function that enters a Monad onto an existing computation 
 
-main = print $ (*2) <$> [1..5]  
+-- https://www.snoyman.com/blog/2017/01/functors-applicatives-and-monads
+-- Notice the distinction between <$> and <*>. The former uses a function which is not wrapped in a functor, 
+-- while the latter applies a function which is wrapped up.
+
+main :: IO ()
+main = do 
+    print $ (*2) <$> Just 5
+    print $ fmap (* 2) (Just 5)

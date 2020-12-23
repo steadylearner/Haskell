@@ -23,6 +23,14 @@ prompt todos = do
             newTodo <- getLine
             editTodo command todos newTodo
         else interpret command todos
+        
+    -- command <- getLine
+    -- if "e" `isPrefixOf` command
+    --     then do
+    --         print "What is the new todo for that?"
+    --         newTodo <- getLine
+    --         editTodo command todos newTodo
+    --     else interpret command todos
 
 -- Include update todo.
 interpret :: String -> [String] -> IO ()

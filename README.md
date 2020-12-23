@@ -12,7 +12,7 @@ This will be similar to the [Rust Full Stack repository](https://github.com/stea
 * [School of Haskell](https://www.schoolofhaskell.com/school/starting-with-haskell/)
 * [Haskell Wiki](https://en.m.wikibooks.org/wiki/Haskell/Simple_input_and_output)
 * [Simple examples](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples#binary-serialization)
-* [Getting started with HasKell](https://stackoverflow.com/questions/1012573/getting-started-with-haskell)
+* [Getting started with Haskell](https://stackoverflow.com/questions/1012573/getting-started-with-haskell)
 * [Learn you a Haskell](http://learnyouahaskell.com/chapters)
 * [Haskell for mac](http://learn.hfm.io/first_steps.html)
 * [Happylearnhaskell](http://www.happylearnhaskelltutorial.com/contents.html)
